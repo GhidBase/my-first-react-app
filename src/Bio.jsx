@@ -1,0 +1,19 @@
+export default function Bio() {
+    const message = "hi!";
+    return (
+        <>
+            <div class="intro">
+                <h1>Welcome to my website!</h1>
+            </div>
+            <p class="summary">
+                You can find my thoughts here.
+                <br></br>
+                <b>
+                    And <i>pictures</i>
+                </b>{" "}
+                of scientists!
+            </p>
+            <p>And lastly, {message}</p>
+        </>
+    );
+}
