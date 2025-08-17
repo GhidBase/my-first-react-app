@@ -9,10 +9,11 @@ import TodoList from './challenges/FixMistake.jsx'
 import Animals from './Animals.jsx'
 import DrinkList from './Conditional.jsx'
 import People from './challenges/ListsChallenge.jsx'
+import RecipeList from './challenges/ListTwo.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <People />
+    <RecipeList />
   </StrictMode>,
 )
 

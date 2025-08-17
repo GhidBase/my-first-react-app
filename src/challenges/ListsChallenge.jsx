@@ -26,10 +26,19 @@ const people = [
     },
 ];
 
-const chemists = people.filter((person) => person.profession == "chemist");
-const others = people.filter((person) => person.profession != "chemist")
+let chemists = [];
+let others = [];
 
-function ListFunction({title, group}) {
+people.map((person) => {
+    if (person.profession == "chemist") {
+        chemists.push(person);
+    }
+    if (person.profession != "chemist") {
+        others.push(person);
+    }
+});
+
+function ListFunction({ title, group }) {
     return (
         <>
             <h1>{title}</h1>
@@ -44,9 +53,9 @@ function ListFunction({title, group}) {
 
 export default function People() {
     return (
-    <>
-        <ListFunction title="chemists" group={chemists} />
-        <ListFunction title="others" group={others} />
-    </>
-);
+        <>
+            <ListFunction title="chemists" group={chemists} />
+            <ListFunction title="others" group={others} />
+        </>
+    );
 }
