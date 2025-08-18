@@ -10,10 +10,13 @@ import Animals from './Animals.jsx'
 import DrinkList from './Conditional.jsx'
 import People from './challenges/ListsChallenge.jsx'
 import RecipeList from './challenges/ListTwo.jsx'
+import Poem from './challenges/Haiku.jsx'
+import TestArea from './practice/MessAround.jsx'
+import Gallery from './challenges/Gallery.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RecipeList />
+    <Gallery />
   </StrictMode>,
 )
 
